@@ -1,16 +1,1 @@
-const menuButton = document.querySelector('.menu-button');
-const navLinks = document.querySelector('.nav-links');
-
-menuButton.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-});
-
-document.querySelectorAll('.nav-links a').forEach((link) => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
-  });
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".menu-toggle"),t=document.querySelector(".site-nav");e&&t&&(e.addEventListener("click",()=>{const n=t.classList.toggle("is-open");e.setAttribute("aria-expanded",String(n)),e.setAttribute("aria-label",n?"Close navigation":"Open navigation")}),t.querySelectorAll("a").forEach(n=>{n.addEventListener("click",()=>{t.classList.remove("is-open"),e.setAttribute("aria-expanded","false"),e.setAttribute("aria-label","Open navigation")})}));const n=document.getElementById("current-year");n&&(n.textContent=(new Date).getFullYear());const o=document.getElementById("poster-modal"),a=document.getElementById("poster-modal-image"),i=document.getElementById("poster-modal-title"),r=document.querySelectorAll("[data-poster]");let l=null;const d=()=>{o&&a&&(o.classList.remove("is-open"),o.setAttribute("aria-hidden","true"),a.src="",document.body.style.overflow="",l instanceof HTMLElement&&l.focus())};r.forEach(e=>{e.addEventListener("click",()=>{if(!o||!a||!i)return;l=document.activeElement;const t=e.dataset.poster,n=e.dataset.title||"Research poster";a.src=t,a.alt=`${n} research poster`,i.textContent=n,o.classList.add("is-open"),o.setAttribute("aria-hidden","false"),document.body.style.overflow="hidden";const r=o.querySelector(".modal-close");r&&r.focus()})}),document.querySelectorAll("[data-close-modal]").forEach(e=>e.addEventListener("click",d)),document.addEventListener("keydown",e=>{"Escape"===e.key&&o?.classList.contains("is-open")&&d()})});
