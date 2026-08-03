@@ -1,390 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal research website of Dr. Anima Kujur, computational scientist working in Medical AI, dynamical systems, neural signals, and interpretable machine learning." />
-  <title>Dr. Anima Kujur | Medical AI & Dynamical Systems</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Anima Kujur — Computational Scientist working in Medical AI, Neural Dynamics, Dynamical Systems, and Reliable & Interpretable AI.">
+  <meta name="author" content="Dr. Anima Kujur">
+  <meta name="theme-color" content="#0b3b73">
+  <title>Dr. Anima Kujur | Medical AI & Neural Dynamics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="logo" href="#home">AK</a>
-      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <div class="nav-links">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Go to homepage">
+        <span class="brand-mark">AK</span>
+        <span class="brand-text">Anima Kujur</span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#methods">Methods</a>
         <a href="#contact">Contact</a>
-      </div>
-    </nav>
+        <a class="nav-cv" href="assets/CV_Dr_Kujur.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="home" class="hero">
+  <main id="main-content">
+    <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Computational Scientist · Medical AI · Dynamical Systems</p>
           <h1>Dr. Anima Kujur</h1>
-          <p class="hero-subtitle">
-            Developing reliable, interpretable, and dynamics-aware artificial intelligence
-            for medical imaging and neural signals.
-          </p>
+          <p class="hero-lead">Developing reliable, interpretable, and dynamics-aware artificial intelligence for medical imaging and neural signals.</p>
+          <p class="hero-summary">I combine medical image analysis, neural time-series modelling, Koopman methods, and scientific machine learning to study complex biomedical systems and build trustworthy AI.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#research">Explore my research</a>
-            <a class="button secondary" href="assets/Anima_Kujur_CV.pdf">Download CV</a>
+            <a class="btn btn-primary" href="#research">Explore my research</a>
+            <a class="btn btn-secondary" href="assets/CV_Dr_Kujur.pdf" target="_blank" rel="noopener">View CV</a>
           </div>
-          <div class="quick-links" aria-label="Professional links">
-            <a href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a href="YOUR_GITHUB_URL" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div class="social-row" aria-label="Professional profiles">
+            <a href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener">GitHub</a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
 
-        <aside class="profile-card">
+        <aside class="profile-card" aria-label="Profile summary">
           <div class="profile-image-wrap">
-            <img src="assets/anima.png" alt="Portrait of Dr. Anima Kujur" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
-            <span class="photo-placeholder">Add your photo as<br><strong>assets/anima.png</strong></span>
+            <img src="assets/anima.png" alt="Portrait of Dr. Anima Kujur">
           </div>
-          <div class="profile-card-body">
-            <h2>Current Position</h2>
-            <p>Postdoctoral Researcher</p>
+          <div class="profile-meta">
+            <p class="profile-label">Current Position</p>
+            <h2>Postdoctoral Researcher</h2>
             <p>Interdisciplinary Center for Scientific Computing (IWR)</p>
-            <p>Heidelberg University, Germany</p>
+            <p>Heidelberg University · Germany</p>
           </div>
         </aside>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container narrow">
-        <p class="section-label">About</p>
-        <h2>Bridging medical imaging, neural signals, and dynamical systems</h2>
-        <p class="lead">
-          I am a computational scientist with a Ph.D. in Computer Science and Technology and a
-          foundation in applied mathematics. My doctoral research focused on deep-learning methods
-          for radiological image classification and segmentation. My current research extends this
-          background toward dynamical-systems-based analysis of neural time-series data.
-        </p>
-        <p>
-          My long-term goal is to develop clinically meaningful AI systems that are not only accurate,
-          but also interpretable, reliable, uncertainty-aware, and grounded in the dynamics of the
-          biological processes they model.
-        </p>
-      </div>
-    </section>
-
-    <section id="research" class="section section-alt">
-      <div class="container">
-        <p class="section-label">Research Vision</p>
-        <h2>Dynamic System Reliability & Interpretable AI</h2>
-        <div class="cards three-columns">
-          <article class="card">
-            <span class="card-number">01</span>
-            <h3>Medical AI</h3>
-            <p>Deep learning for MRI, fMRI, CT, X-ray, and ultrasound, with emphasis on classification, segmentation, multimodal learning, and trustworthy evaluation.</p>
-          </article>
-          <article class="card">
-            <span class="card-number">02</span>
-            <h3>Neural Dynamics</h3>
-            <p>Reconstruction and analysis of EEG, LFP, and fMRI signals using Koopman operators, DMD, EDMD, recurrent networks, and scientific machine learning.</p>
-          </article>
-          <article class="card">
-            <span class="card-number">03</span>
-            <h3>Reliable & Interpretable AI</h3>
-            <p>Uncertainty, calibration, robustness, explainability, generalization, and mechanistic understanding for models used in biomedical research.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-<!-- =========================================================
-     RESEARCH THEMES
-========================================================== -->
-<section id="research-themes" class="research-themes section">
-  <div class="container">
-
-    <div class="section-heading">
-      <span class="section-label">My Research</span>
-
-      <h2>Three Connected Research Directions</h2>
-
-      <p>
-        My research brings together medical artificial intelligence,
-        neural dynamics, and reliable and interpretable machine learning.
-        Select a poster to explore each research direction in detail.
-      </p>
-    </div>
-
-    <div class="poster-grid">
-
-      <!-- Medical AI -->
-      <article class="poster-card medical-ai-card">
-
-        <a
-          href="assets/Med.png"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="poster-image-link"
-          aria-label="Open the Medical AI research poster"
-        >
-          <img
-            src="assets/Med.png"
-            alt="Medical AI research poster by Dr. Anima Kujur"
-            class="poster-image"
-            loading="lazy"
-          >
-
-          <div class="poster-overlay">
-            <span>View Full Poster</span>
-          </div>
-        </a>
-
-        <div class="poster-content">
-          <span class="poster-number">01</span>
-
-          <h3>Medical AI</h3>
-
-          <p>
-            Deep learning and multimodal methods for medical-image
-            classification, segmentation, registration, diagnosis,
-            and clinically meaningful analysis.
-          </p>
-
-          <a
-            href="assets/Med.png"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="poster-button"
-          >
-            Explore Medical AI
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-
-      </article>
-
-
-      <!-- Neural Dynamics -->
-      <article class="poster-card neural-dynamics-card">
-
-        <a
-          href="assets/ND.png"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="poster-image-link"
-          aria-label="Open the Neural Dynamics research poster"
-        >
-          <img
-            src="assets/ND.png"
-            alt="Neural Dynamics research poster by Dr. Anima Kujur"
-            class="poster-image"
-            loading="lazy"
-          >
-
-          <div class="poster-overlay">
-            <span>View Full Poster</span>
-          </div>
-        </a>
-
-        <div class="poster-content">
-          <span class="poster-number">02</span>
-
-          <h3>Neural Dynamics</h3>
-
-          <p>
-            Dynamical systems, Koopman operators, DMD, EDMD, and
-            sequence models for understanding, reconstructing,
-            and predicting neural activity.
-          </p>
-
-          <a
-            href="assets/ND.png"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="poster-button"
-          >
-            Explore Neural Dynamics
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-
-      </article>
-
-
-      <!-- Reliable and Interpretable AI -->
-      <article class="poster-card reliable-ai-card">
-
-        <a
-          href="assets/RI.png"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="poster-image-link"
-          aria-label="Open the Reliable and Interpretable AI research poster"
-        >
-          <img
-            src="assets/RI.png"
-            alt="Reliable and Interpretable AI research poster by Dr. Anima Kujur"
-            class="poster-image"
-            loading="lazy"
-          >
-
-          <div class="poster-overlay">
-            <span>View Full Poster</span>
-          </div>
-        </a>
-
-        <div class="poster-content">
-          <span class="poster-number">03</span>
-
-          <h3>Reliable &amp; Interpretable AI</h3>
-
-          <p>
-            Uncertainty, calibration, robustness, generalization,
-            explainability, and responsible evaluation for trustworthy
-            artificial intelligence.
-          </p>
-
-          <a
-            href="assets/RI.png"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="poster-button"
-          >
-            Explore Reliable AI
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-
-      </article>
-
-    </div>
-  </div>
-</section>
-    <section id="projects" class="section">
-      <div class="container">
-        <p class="section-label">Selected Projects</p>
-        <h2>Current and recent research</h2>
-        <div class="project-list">
-          <article class="project">
-            <div>
-              <p class="project-tag">Neural Signals · Koopman Methods</p>
-              <h3>Hippocampal LFP Reconstruction and Sharp-Wave Ripple Analysis</h3>
-            </div>
-            <p>Investigating PCA-DMD, classical and sparse DMD, higher-order methods, and deep Koopman models for multichannel neural-signal reconstruction, cross-subject generalization, and event preservation.</p>
-          </article>
-
-          <article class="project">
-            <div>
-              <p class="project-tag">Optimization Dynamics · Spectral Analysis</p>
-              <h3>Hessian and EDMD Analysis of Neural-Network Training</h3>
-            </div>
-            <p>Studying how the local curvature of loss landscapes relates to Koopman spectra estimated from neural-network parameter trajectories across stages of training.</p>
-          </article>
-
-          <article class="project">
-            <div>
-              <p class="project-tag">Multimodal Medical Imaging</p>
-              <h3>MRI–fMRI Integration for Alzheimer Disease Analysis</h3>
-            </div>
-            <p>Evaluating multimodal deep-learning models under severe paired-data limitations using subject-level leakage-safe validation and transparent reporting of instability and generalization.</p>
-          </article>
-
-          <article class="project">
-            <div>
-              <p class="project-tag">Foundation Models · Biomedical Time Series</p>
-              <h3>Foundation Models for Biomedical Signal Classification</h3>
-            </div>
-            <p>Exploring pretrained time-series representations and efficient downstream adaptation for biomedical signal tasks, including reproducible CPU-compatible workflows.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section section-alt">
-      <div class="container">
-        <div class="section-heading-row">
-          <div>
-            <p class="section-label">Publications</p>
-            <h2>Selected work</h2>
-          </div>
-          <a class="text-link" href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noreferrer">View full publication list →</a>
-        </div>
-
-        <div class="publication-note">
-          Replace the examples below with your exact publication titles, author lists, venues, years, and links. Do not publish incomplete or unverified citations.
-        </div>
-
-        <ol class="publication-list">
-          <li>
-            <span class="publication-year">2026</span>
-            <div>
-              <h3>Your latest paper title</h3>
-              <p><strong>Anima Kujur</strong>, Coauthor One, Coauthor Two. Journal or Conference.</p>
-              <div class="publication-links"><a href="#">Paper</a><a href="#">Code</a><a href="#">BibTeX</a></div>
-            </div>
-          </li>
-          <li>
-            <span class="publication-year">2025</span>
-            <div>
-              <h3>Your second selected paper title</h3>
-              <p><strong>Anima Kujur</strong>, Coauthor One. Journal or Conference.</p>
-              <div class="publication-links"><a href="#">Paper</a><a href="#">Code</a></div>
-            </div>
-          </li>
-          <li>
-            <span class="publication-year">2024</span>
-            <div>
-              <h3>Your third selected paper title</h3>
-              <p><strong>Anima Kujur</strong>, Coauthor One, Coauthor Two. Journal or Conference.</p>
-              <div class="publication-links"><a href="#">Paper</a></div>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <p class="section-label">Methods & Tools</p>
-        <h2>Research toolkit</h2>
-        <div class="tag-cloud">
-          <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span>
-          <span>Medical Image Analysis</span><span>MRI & fMRI</span><span>EEG & LFP</span>
-          <span>Koopman Operators</span><span>DMD & EDMD</span><span>RNN · GRU · LSTM</span>
-          <span>Transformers</span><span>Neural ODEs</span><span>PINNs</span>
-          <span>Uncertainty & Calibration</span><span>Explainable AI</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-grid">
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
         <div>
-          <p class="section-label light">Contact</p>
+          <p class="section-kicker">About</p>
+          <h2>Bridging medical imaging, neural signals, and dynamical systems</h2>
+        </div>
+        <div class="about-copy">
+          <p>I am a computational scientist with a Ph.D. in Computer Science and Technology and a foundation in applied mathematics. My doctoral research focused on deep-learning methods for radiological image classification and segmentation.</p>
+          <p>My current research extends this background toward the analysis and reconstruction of neural time-series data using dynamical systems, Koopman operators, Dynamic Mode Decomposition, and sequence models.</p>
+          <p>My long-term goal is to develop clinically meaningful AI systems that are not only accurate, but also interpretable, reliable, uncertainty-aware, and grounded in the dynamics of the biological processes they model.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Research Vision</p>
+          <h2>Three connected research directions</h2>
+          <p>Select any poster to view it at full size. Together, these themes define my broader vision for dynamics-aware and trustworthy biomedical AI.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card medical-card">
+            <button class="poster-button-image" type="button" data-poster="assets/Med.png" data-title="Medical AI" aria-label="Open Medical AI poster">
+              <img src="assets/Med.png" alt="Medical AI research poster" loading="lazy">
+              <span class="poster-zoom">View full poster</span>
+            </button>
+            <div class="research-card-body">
+              <span class="research-index">01</span>
+              <h3>Medical AI</h3>
+              <p>Deep learning and multimodal methods for MRI, fMRI, CT, X-ray, and ultrasound, with emphasis on classification, segmentation, registration, diagnosis, and trustworthy evaluation.</p>
+            </div>
+          </article>
+
+          <article class="research-card dynamics-card">
+            <button class="poster-button-image" type="button" data-poster="assets/ND.png" data-title="Neural Dynamics" aria-label="Open Neural Dynamics poster">
+              <img src="assets/ND.png" alt="Neural Dynamics research poster" loading="lazy">
+              <span class="poster-zoom">View full poster</span>
+            </button>
+            <div class="research-card-body">
+              <span class="research-index">02</span>
+              <h3>Neural Dynamics</h3>
+              <p>Reconstruction and analysis of EEG, LFP, and fMRI using dynamical systems, Koopman operators, DMD, EDMD, recurrent networks, and scientific machine learning.</p>
+            </div>
+          </article>
+
+          <article class="research-card reliable-card">
+            <button class="poster-button-image" type="button" data-poster="assets/RI.png" data-title="Reliable and Interpretable AI" aria-label="Open Reliable and Interpretable AI poster">
+              <img src="assets/RI.png" alt="Reliable and Interpretable AI research poster" loading="lazy">
+              <span class="poster-zoom">View full poster</span>
+            </button>
+            <div class="research-card-body">
+              <span class="research-index">03</span>
+              <h3>Reliable &amp; Interpretable AI</h3>
+              <p>Uncertainty, calibration, robustness, explainability, generalization, and mechanistic understanding for trustworthy biomedical AI.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publications-section" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Publications</p>
+          <h2>Recent work</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+            <div>
+              <p class="publication-type">ICML Workshop · High-dimensional Learning Dynamics</p>
+              <h3>Learning High-Dimensional Transient Neural Dynamics for Zero-Shot Cross-Subject Reconstruction</h3>
+              <p class="authors"><strong>Anima Kujur</strong> and Zahra Monfared.</p>
+              <p class="venue">ICML Workshop on High-dimensional Learning Dynamics, 2026.</p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+            <div>
+              <p class="publication-type">arXiv Preprint</p>
+              <h3>Multimodal Deep Learning for Dynamic and Static Neuroimaging: Integrating MRI and fMRI for Alzheimer Disease Analysis</h3>
+              <p class="authors"><strong>Anima Kujur</strong> and Zahra Monfared.</p>
+              <p class="venue">arXiv:2603.13367, 2026.</p>
+              <a class="text-link" href="https://arxiv.org/abs/2603.13367" target="_blank" rel="noopener">View paper →</a>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2025</div>
+            <div>
+              <p class="publication-type">NeurIPS Workshop · Learning from Time Series for Health</p>
+              <h3>Transient Neural Dynamics Reconstruction</h3>
+              <p class="authors"><strong>Anima Kujur</strong>, Zahra Monfared, and Shervin Safavi.</p>
+              <p class="venue">NeurIPS Workshop on Learning from Time Series for Health, 2025.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section methods-section" id="methods">
+      <div class="container methods-grid">
+        <div>
+          <p class="section-kicker">Methods &amp; Tools</p>
+          <h2>A research toolkit spanning AI, mathematics, and biomedical data</h2>
+        </div>
+        <div class="tag-cloud" aria-label="Research methods and tools">
+          <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span>
+          <span>Medical Image Analysis</span><span>MRI &amp; fMRI</span><span>EEG &amp; LFP</span>
+          <span>Koopman Operators</span><span>DMD &amp; EDMD</span><span>RNN · GRU · LSTM</span>
+          <span>Transformers</span><span>Neural ODEs</span><span>PINNs</span>
+          <span>Uncertainty &amp; Calibration</span><span>Explainable AI</span><span>Scientific Machine Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-panel">
+        <div>
+          <p class="section-kicker light">Contact</p>
           <h2>Research conversations and collaborations</h2>
           <p>I welcome discussions in medical AI, neural dynamics, interpretable machine learning, and scientific machine learning.</p>
         </div>
-        <div class="contact-card">
-          <p><strong>Email</strong><br><a href="mailto:YOUR_EMAIL_ADDRESS">anima.kujur@iwr.uni-heidelberg.de</a></p>
-          <p><strong>Location</strong><br>Heidelberg, Germany</p>
-          <p><strong>Affiliation</strong><br>Heidelberg University</p>
+        <div class="contact-details">
+          <div><span>Email</span><a href="mailto:anima.kujur@iwr.uni-heidelberg.de">anima.kujur@iwr.uni-heidelberg.de</a></div>
+          <div><span>Location</span><p>Heidelberg, Germany</p></div>
+          <div><span>Affiliation</span><p>Heidelberg University</p></div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> Dr. Anima Kujur</p>
-      <p>Hosted free with GitHub Pages</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> Dr. Anima Kujur</p>
+      <p>Hosted with GitHub Pages</p>
     </div>
   </footer>
 
+  <div class="poster-modal" id="poster-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="poster-modal-title">
+    <div class="poster-modal-backdrop" data-close-modal></div>
+    <div class="poster-modal-content">
+      <div class="poster-modal-toolbar">
+        <h2 id="poster-modal-title">Research poster</h2>
+        <button class="modal-close" type="button" aria-label="Close poster" data-close-modal>×</button>
+      </div>
+      <div class="poster-modal-scroll"><img id="poster-modal-image" src="" alt=""></div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
