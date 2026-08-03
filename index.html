@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal research website of Dr. Anima Kujur, computational scientist working in Medical AI, dynamical systems, neural signals, and interpretable machine learning." />
+  <title>Dr. Anima Kujur | Medical AI & Dynamical Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">AK</a>
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computational Scientist · Medical AI · Dynamical Systems</p>
+          <h1>Dr. Anima Kujur</h1>
+          <p class="hero-subtitle">
+            Developing reliable, interpretable, and dynamics-aware artificial intelligence
+            for medical imaging and neural signals.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">Explore my research</a>
+            <a class="button secondary" href="assets/Anima_Kujur_CV.pdf">Download CV</a>
+          </div>
+          <div class="quick-links" aria-label="Professional links">
+            <a href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="YOUR_GITHUB_URL" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="profile-image-wrap">
+            <img src="assets/profile.jpg" alt="Portrait of Dr. Anima Kujur" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+            <span class="photo-placeholder">Add your photo as<br><strong>assets/profile.jpg</strong></span>
+          </div>
+          <div class="profile-card-body">
+            <h2>Current Position</h2>
+            <p>Postdoctoral Researcher</p>
+            <p>Interdisciplinary Center for Scientific Computing (IWR)</p>
+            <p>Heidelberg University, Germany</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="section-label">About</p>
+        <h2>Bridging medical imaging, neural signals, and dynamical systems</h2>
+        <p class="lead">
+          I am a computational scientist with a Ph.D. in Computer Science and Technology and a
+          foundation in applied mathematics. My doctoral research focused on deep-learning methods
+          for radiological image classification and segmentation. My current research extends this
+          background toward dynamical-systems-based analysis of neural time-series data.
+        </p>
+        <p>
+          My long-term goal is to develop clinically meaningful AI systems that are not only accurate,
+          but also interpretable, reliable, uncertainty-aware, and grounded in the dynamics of the
+          biological processes they model.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <p class="section-label">Research Vision</p>
+        <h2>Dynamic System Reliability & Interpretable AI</h2>
+        <div class="cards three-columns">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>Medical AI</h3>
+            <p>Deep learning for MRI, fMRI, CT, X-ray, and ultrasound, with emphasis on classification, segmentation, multimodal learning, and trustworthy evaluation.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>Neural Dynamics</h3>
+            <p>Reconstruction and analysis of EEG, LFP, and fMRI signals using Koopman operators, DMD, EDMD, recurrent networks, and scientific machine learning.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>Reliable & Interpretable AI</h3>
+            <p>Uncertainty, calibration, robustness, explainability, generalization, and mechanistic understanding for models used in biomedical research.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">Selected Projects</p>
+        <h2>Current and recent research</h2>
+        <div class="project-list">
+          <article class="project">
+            <div>
+              <p class="project-tag">Neural Signals · Koopman Methods</p>
+              <h3>Hippocampal LFP Reconstruction and Sharp-Wave Ripple Analysis</h3>
+            </div>
+            <p>Investigating PCA-DMD, classical and sparse DMD, higher-order methods, and deep Koopman models for multichannel neural-signal reconstruction, cross-subject generalization, and event preservation.</p>
+          </article>
+
+          <article class="project">
+            <div>
+              <p class="project-tag">Optimization Dynamics · Spectral Analysis</p>
+              <h3>Hessian and EDMD Analysis of Neural-Network Training</h3>
+            </div>
+            <p>Studying how the local curvature of loss landscapes relates to Koopman spectra estimated from neural-network parameter trajectories across stages of training.</p>
+          </article>
+
+          <article class="project">
+            <div>
+              <p class="project-tag">Multimodal Medical Imaging</p>
+              <h3>MRI–fMRI Integration for Alzheimer Disease Analysis</h3>
+            </div>
+            <p>Evaluating multimodal deep-learning models under severe paired-data limitations using subject-level leakage-safe validation and transparent reporting of instability and generalization.</p>
+          </article>
+
+          <article class="project">
+            <div>
+              <p class="project-tag">Foundation Models · Biomedical Time Series</p>
+              <h3>Foundation Models for Biomedical Signal Classification</h3>
+            </div>
+            <p>Exploring pretrained time-series representations and efficient downstream adaptation for biomedical signal tasks, including reproducible CPU-compatible workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section section-alt">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <p class="section-label">Publications</p>
+            <h2>Selected work</h2>
+          </div>
+          <a class="text-link" href="YOUR_GOOGLE_SCHOLAR_URL" target="_blank" rel="noreferrer">View full publication list →</a>
+        </div>
+
+        <div class="publication-note">
+          Replace the examples below with your exact publication titles, author lists, venues, years, and links. Do not publish incomplete or unverified citations.
+        </div>
+
+        <ol class="publication-list">
+          <li>
+            <span class="publication-year">2026</span>
+            <div>
+              <h3>Your latest paper title</h3>
+              <p><strong>Anima Kujur</strong>, Coauthor One, Coauthor Two. Journal or Conference.</p>
+              <div class="publication-links"><a href="#">Paper</a><a href="#">Code</a><a href="#">BibTeX</a></div>
+            </div>
+          </li>
+          <li>
+            <span class="publication-year">2025</span>
+            <div>
+              <h3>Your second selected paper title</h3>
+              <p><strong>Anima Kujur</strong>, Coauthor One. Journal or Conference.</p>
+              <div class="publication-links"><a href="#">Paper</a><a href="#">Code</a></div>
+            </div>
+          </li>
+          <li>
+            <span class="publication-year">2024</span>
+            <div>
+              <h3>Your third selected paper title</h3>
+              <p><strong>Anima Kujur</strong>, Coauthor One, Coauthor Two. Journal or Conference.</p>
+              <div class="publication-links"><a href="#">Paper</a></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Methods & Tools</p>
+        <h2>Research toolkit</h2>
+        <div class="tag-cloud">
+          <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span>
+          <span>Medical Image Analysis</span><span>MRI & fMRI</span><span>EEG & LFP</span>
+          <span>Koopman Operators</span><span>DMD & EDMD</span><span>RNN · GRU · LSTM</span>
+          <span>Transformers</span><span>Neural ODEs</span><span>PINNs</span>
+          <span>Uncertainty & Calibration</span><span>Explainable AI</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label light">Contact</p>
+          <h2>Research conversations and collaborations</h2>
+          <p>I welcome discussions in medical AI, neural dynamics, interpretable machine learning, and scientific machine learning.</p>
+        </div>
+        <div class="contact-card">
+          <p><strong>Email</strong><br><a href="mailto:YOUR_EMAIL_ADDRESS">YOUR_EMAIL_ADDRESS</a></p>
+          <p><strong>Location</strong><br>Heidelberg, Germany</p>
+          <p><strong>Affiliation</strong><br>Heidelberg University</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Dr. Anima Kujur</p>
+      <p>Hosted free with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
