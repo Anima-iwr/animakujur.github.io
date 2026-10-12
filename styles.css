@@ -7,3 +7,113 @@
 .poster-modal{position:fixed;inset:0;z-index:2000;display:none}.poster-modal.is-open{display:block}.poster-modal-backdrop{position:absolute;inset:0;background:rgba(4,16,30,.82);backdrop-filter:blur(6px)}.poster-modal-content{position:relative;z-index:1;width:min(94vw,1180px);height:min(92vh,920px);margin:4vh auto;overflow:hidden;background:#fff;border-radius:18px;box-shadow:0 30px 90px rgba(0,0,0,.38)}.poster-modal-toolbar{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 18px;border-bottom:1px solid var(--line)}.poster-modal-toolbar h2{margin:0;font-family:"Manrope",sans-serif;font-size:1rem}.modal-close{width:40px;height:40px;color:var(--navy);background:#eef3f8;border:0;border-radius:50%;font-size:1.8rem;line-height:1;cursor:pointer}.poster-modal-scroll{height:calc(100% - 58px);overflow:auto;padding:18px;background:#edf2f7;text-align:center}.poster-modal-scroll img{width:auto;max-width:100%;height:auto;background:#fff;box-shadow:0 12px 34px rgba(0,0,0,.16)}
 @media(max-width:980px){.hero-grid,.about-grid,.methods-grid,.contact-panel{grid-template-columns:1fr}.hero-grid{gap:46px}.profile-card{max-width:460px}.research-grid{grid-template-columns:1fr}.poster-button-image{aspect-ratio:16/9}.contact-panel{gap:40px}}@media(max-width:760px){.section{padding:72px 0}.menu-toggle{display:block}.site-nav{position:absolute;top:76px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 20px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 16px 32px rgba(21,35,55,.08)}.site-nav.is-open{display:flex}.site-nav a{padding:12px 8px}.site-nav .nav-cv{margin-top:8px;text-align:center}.hero{padding-top:62px}.publication-item{grid-template-columns:1fr;gap:8px}.contact-panel{padding:34px 26px}.footer-inner{flex-direction:column;gap:8px}}@media(max-width:520px){.container{width:min(calc(100% - 28px),var(--container))}body{font-size:15px}.hero-actions{flex-direction:column}.btn{width:100%}.poster-button-image{aspect-ratio:4/3}.poster-zoom{right:10px;bottom:10px}}
 @media print{@page{size:A4;margin:14mm}body{font-size:10.5pt;color:#111827;background:#fff}.site-header,.menu-toggle,.poster-zoom,.poster-modal,.social-row{display:none!important}.section,.hero,.contact-section{padding:18mm 0 10mm;background:#fff!important}.hero-grid,.about-grid,.methods-grid,.contact-panel{grid-template-columns:1fr 1fr;gap:12mm}.research-grid{grid-template-columns:repeat(3,1fr);gap:7mm}.profile-card,.research-card,.contact-panel{box-shadow:none;break-inside:avoid}.poster-button-image{aspect-ratio:4/3}.contact-panel{color:#111827;background:#fff!important;border:1px solid var(--line)}.contact-panel h2,.contact-details p,.contact-details a{color:#111827}a{text-decoration:none}}
+
+/* ==========================================
+   FOUR RESEARCH DIRECTIONS
+========================================== */
+
+/* Two cards per row on desktop */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Consistent card appearance */
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+/* Square poster previews */
+
+.poster-button-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  cursor: zoom-in;
+  background: #f2f6fa;
+}
+
+.poster-button-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Descriptions */
+
+.research-card-body {
+  flex: 1;
+  padding: 26px;
+}
+
+.research-card-body h3 {
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.research-card-body p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+/* Individual research theme colours */
+
+.medical-card {
+  border-top: 5px solid #1768c2;
+}
+
+.medical-card .research-index {
+  color: #1768c2;
+}
+
+.reliable-card {
+  border-top: 5px solid #238455;
+}
+
+.reliable-card .research-index {
+  color: #238455;
+}
+
+.dynamics-card {
+  border-top: 5px solid #7043bd;
+}
+
+.dynamics-card .research-index {
+  color: #7043bd;
+}
+
+.nn-systems-card {
+  border-top: 5px solid #de722e;
+}
+
+.nn-systems-card .research-index {
+  color: #de722e;
+}
+
+/* Mobile: one card per row */
+
+@media (max-width: 760px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .research-card-body {
+    padding: 22px;
+  }
+}
